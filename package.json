@@ -1,0 +1,14 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "guozhengzhong <guozhengzhongemail@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.35"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  }
+}
