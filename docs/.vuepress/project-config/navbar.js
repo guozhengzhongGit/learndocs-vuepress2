@@ -43,8 +43,12 @@ module.exports = [
         text: "React",
         children: [
           {
-            text: "源码",
-            link: "/framework/react/source",
+            text: "原理分析",
+            link: "/framework/react-code",
+          },
+          {
+            text: "源码解析",
+            link: "/framework/react-source",
           },
         ],
       },
@@ -148,6 +152,23 @@ module.exports = [
           {
             text: "表达陈述",
             link: "/question/talk",
+          },
+        ],
+      },
+      {
+        text: "手写代码",
+        children: [
+          {
+            text: "实现原生API",
+            link: "/writecode/api",
+          },
+          {
+            text: "手写自定义方法",
+            link: "/writecode/fn",
+          },
+          {
+            text: "场景设计",
+            link: "/writecode/design",
           },
         ],
       },
