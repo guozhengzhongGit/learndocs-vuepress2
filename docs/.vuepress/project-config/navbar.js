@@ -63,6 +63,15 @@ module.exports = [
       },
     ],
   },
+  {
+    text: "常用类库",
+    children: [
+      {
+        text: "immer",
+        link: "/library/immer",
+      },
+    ],
+  },
   // {
   // text: "前端工程化",
   // children: [
@@ -78,7 +87,7 @@ module.exports = [
   // ],
   // },
   {
-    text: "项目构建",
+    text: "前端工程化",
     children: [
       {
         text: "代码打包",
@@ -86,6 +95,15 @@ module.exports = [
           {
             text: "Tree Shaking",
             link: "/bundle/treeshaking",
+          },
+        ],
+      },
+      {
+        text: "脚手架",
+        children: [
+          {
+            text: "项目搭建",
+            link: "/bundle/feproject",
           },
         ],
       },
@@ -105,6 +123,37 @@ module.exports = [
       {
         text: "力扣刷题",
         link: "/algorithm/leetcode",
+      },
+    ],
+  },
+  {
+    text: "综合扩展",
+    children: [
+      {
+        text: "浏览器",
+        link: "/plus/browser",
+      },
+    ],
+  },
+  {
+    text: "题海拾贝",
+    children: [
+      {
+        text: "模拟考场",
+        children: [
+          {
+            text: "代码运行结果",
+            link: "/question/coderes",
+          },
+          {
+            text: "表达陈述",
+            link: "/question/talk",
+          },
+        ],
+      },
+      {
+        text: "真题收纳",
+        link: "/question/real",
       },
     ],
   },
