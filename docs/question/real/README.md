@@ -59,3 +59,28 @@ radix 为 1，小于 2，返回 NaN；
 
 radix 为 2，当作 2 进制处理，但此时要处理的值是 3，二进制中只有 0 和 1，无法解析 3，返回 NaN
 :::
+
+### 04. 计算菲波那切数列的第 N 项
+
+#### 递归
+
+```
+const fib = (n) => {
+  if (n === 0) return 0
+  if (n === 1) return 1
+  return fib(n-2) + fib(n-1)
+}
+```
+
+#### 迭代
+
+```
+const fib = (n) => {
+  if (n === 0) return 0;
+  let a1 = 0, a2 = 1;
+  for (let i = 1; i < n; i += 1>) {
+    [a1, a2] = [a2, a1 + a2];
+  }
+  return a2;
+}
+```
