@@ -32,7 +32,7 @@ jobs:
           cd learndocs-vuepress2
           yarn build
       - name: deploy
-        run: 开始发布
+        uses: cross-the-world/scp-pipeline@master
         with:
           host: ${{ secrets.DR_HOST }}
           user: ${{ secrets.DR_USERNAME }}
