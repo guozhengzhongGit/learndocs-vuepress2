@@ -17,17 +17,16 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-18.04
     steps:
-      - name: checkout
+      - name: 获取项目
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         uses: actions/checkout@v3
         with:
           persist-credentials: false
-      - name: Run a multi-line script
+      - name: 代码打包
         run: |
-          # cd /learndocs-vuepress2
           yarn
           yarn build
-      - name: deploy
+      - name: 发布
         uses: cross-the-world/scp-pipeline@master
         with:
           host: ${{ secrets.DR_HOST }}
