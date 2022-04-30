@@ -24,6 +24,7 @@ jobs:
           persist-credentials: false
       - name: 代码打包
         run: |
+          git pull
           yarn
           yarn build
       - name: 发布
