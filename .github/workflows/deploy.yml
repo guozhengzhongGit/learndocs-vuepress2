@@ -24,7 +24,7 @@ jobs:
           persist-credentials: false
       - name: Run a multi-line script
         run: |
-          cd /learndocs-vuepress2
+          # cd /learndocs-vuepress2
           yarn
           yarn build
       - name: deploy
