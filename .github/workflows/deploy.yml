@@ -6,9 +6,9 @@ name: deploy to http://124.70.83.234:8088
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -32,8 +32,9 @@ jobs:
           cd learndocs-vuepress2
           yarn build
       - name: deploy
+        run: 开始发布
         with:
-         host: ${{ secrets.DR_HOST }}
-         user: ${{ secrets.DR_USERNAME }}
-         pass: ${{ secrets.DR_PASSWORD }}
-         connect_timeout: 10s
+          host: ${{ secrets.DR_HOST }}
+          user: ${{ secrets.DR_USERNAME }}
+          pass: ${{ secrets.DR_PASSWORD }}
+          connect_timeout: 10s
