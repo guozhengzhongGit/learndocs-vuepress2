@@ -121,14 +121,18 @@ module.exports = [
         link: "/network/protocol",
       },
       {
-        text: '跨域',
+        text: "跨域",
         link: "/network/cors",
+      },
+      {
+        text: "web安全",
+        link: "/network/safe",
       },
       {
         text: "CDN",
         link: "/network/cdn",
       },
-    ]
+    ],
   },
   {
     text: "算法学习",
