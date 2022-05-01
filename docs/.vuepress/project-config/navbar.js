@@ -114,6 +114,23 @@ module.exports = [
     ],
   },
   {
+    text: "网络与安全",
+    children: [
+      {
+        text: "网络协议",
+        link: "/network/protocol",
+      },
+      {
+        text: '跨域',
+        link: "/network/cors",
+      },
+      {
+        text: "CDN",
+        link: "/network/cdn",
+      },
+    ]
+  },
+  {
     text: "算法学习",
     children: [
       // {
@@ -133,19 +150,6 @@ module.exports = [
   {
     text: "综合扩展",
     children: [
-      {
-        text: "网络世界",
-        children: [
-          {
-            text: "网络协议",
-            link: "/network/protocol",
-          },
-          {
-            text: "CDN",
-            link: "/network/cdn",
-          },
-        ],
-      },
       {
         text: "浏览器",
         link: "/plus/browser",
