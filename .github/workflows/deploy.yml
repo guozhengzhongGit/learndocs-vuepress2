@@ -30,9 +30,9 @@ jobs:
       - name: 发布
         uses: cross-the-world/scp-pipeline@master
         with:
-          host: ${{ secrets.DR_HOST }}
-          user: ${{ secrets.DR_USERNAME }}
-          pass: ${{ secrets.DR_PASSWORD }}
+          host: ${{ secrets.HW_HOST }}
+          user: ${{ secrets.HW_USERNAME }}
+          pass: ${{ secrets.HW_PASSWORD }}
           connect_timeout: 10s
           local: "./learndocs-vuepress2/docs/.vuepress/dist/*" # 这里是下一步要创建的vue项目构建完成后的静态资源路径
           remote: "/root/projects/dist" # 这里是 step1 中，在服务器上创建用于存放静态资源的文件夹
