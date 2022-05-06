@@ -13,3 +13,5 @@ description: es6 模块化
 ## [super 关键字](./super/README.md)
 
 ## [Promise](./promise/README.md)
+
+## [Proxy](./proxy/README.md)
