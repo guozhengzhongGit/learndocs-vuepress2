@@ -43,5 +43,3 @@ console.log('friend' in proxy);
 delete proxy.name;
 console.log(Object.keys(proxy));
 ```
-
-![截屏2022-03-17 上午10.39.01](https://assets-1253723501.cos.ap-beijing.myqcloud.com/uPic/2022_05_06_105851%E6%88%AA%E5%B1%8F2022-03-17%20%E4%B8%8A%E5%8D%8810.39.01lWwv8T.png)
